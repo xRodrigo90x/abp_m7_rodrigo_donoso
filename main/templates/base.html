@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Mi E-Commerce{% endblock %}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+    {% include 'navbar.html' %}
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer class="bg-dark text-white pt-5 pb-4 mt-5">
+        <div class="container text-center text-md-start">
+            <div class="row text-center text-md-start">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-primary">E-SHOP</h5>
+                    <p>Tu solución tecnológica para compras seguras y rápidas.</p>
+                </div>
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-primary">Contacto</h5>
+                    <p><i class="bi bi-house-door-fill me-2"></i> Valparaíso, Chile</p>
+                    <p><i class="bi bi-envelope-fill me-2"></i> contacto@eshop.cl</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

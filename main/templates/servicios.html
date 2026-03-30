@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+
+{% block title %}Nuestros Servicios - E-SHOP{% endblock %}
+
+{% block content %}
+<div class="bg-primary text-white py-5 mb-5">
+    <div class="container text-center">
+        <h1 class="display-4 fw-bold">Servicios y Compromisos</h1>
+        <p class="lead">Más que una tienda, somos tu aliado tecnológico en Chile.</p>
+    </div>
+</div>
+
+<div class="container mb-5">
+    <div class="row g-4 py-5">
+        <div class="col-md-6 col-lg-4">
+            <div class="text-center p-4 card h-100 border-0 shadow-sm">
+                <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-primary fs-1 mb-3">
+                    <i class="bi bi-truck"></i>
+                </div>
+                <h4 class="fw-semibold">Despacho Express</h4>
+                <p class="text-muted">Realizamos envíos a todo Chile. Si estás en la Región de Valparaíso, ¡entregamos en menos de 24 horas!</p>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="text-center p-4 card h-100 border-0 shadow-sm">
+                <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-primary fs-1 mb-3">
+                    <i class="bi bi-patch-check"></i>
+                </div>
+                <h4 class="fw-semibold">Garantía Extendida</h4>
+                <p class="text-muted">Todos nuestros productos cuentan con 12 meses de garantía técnica ante cualquier falla de fábrica.</p>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="text-center p-4 card h-100 border-0 shadow-sm">
+                <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-primary fs-1 mb-3">
+                    <i class="bi bi-credit-card"></i>
+                </div>
+                <h4 class="fw-semibold">Múltiples Medios de Pago</h4>
+                <p class="text-muted">Aceptamos Webpay, transferencias bancarias y convenios con instituciones de salud.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-lg-8 mx-auto">
+            <h2 class="text-center mb-4 fw-bold">Preguntas Frecuentes</h2>
+            <div class="accordion shadow-sm" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                            ¿Cómo realizo una compra?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Primero debes <strong>iniciar sesión</strong>. Luego navega por nuestro catálogo, agrega al carrito y sigue los pasos de confirmación.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                            ¿Tienen tienda física?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Actualmente operamos 100% online con bodegas en <strong>Quilpué</strong>, lo que nos permite mantener precios más competitivos.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
